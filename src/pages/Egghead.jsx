@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 
 const Egghead = () => {
   const controlsHello = useAnimationControls();
@@ -116,7 +116,7 @@ const Egghead = () => {
             stiffness: 100,
             damping: 10,
           }}
-          className="flex flex-row items-center justify-center text-lg w-auto text-center"
+          className="flex flex-col md:flex-row items-center justify-center text-lg w-auto text-center"
         >
           <p>
             <span className="text-blue-500">// for hello text</span>
