@@ -47,9 +47,9 @@ function Docs() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <nav className="container mx-auto flex justify-between items-center">
+        <nav className="container mx-auto flex flex-wrap justify-between items-center">
           <h1 className="text-3xl font-bold">Framer Motion Showcase</h1>
-          <ul className="flex space-x-4">
+          <ul className="flex flex-wrap space-x-4">
             <li>
               <a href="#hero" className="hover:text-secondary">
                 Home
@@ -79,7 +79,7 @@ function Docs() {
         className="hero-section bg-gradient-to-r from-primary to-secondary text-primary-content py-20"
         id="hero"
       >
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center px-4">
           <motion.h2
             className="text-5xl font-extrabold mb-4"
             initial={{ opacity: 0, y: -50 }}
@@ -113,7 +113,7 @@ function Docs() {
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center mb-12">Features</h3>
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

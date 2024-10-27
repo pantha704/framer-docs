@@ -29,15 +29,15 @@ const Egghead = () => {
   }, []);
 
   return (
-    <div className="p-20 grid grid-cols-1 gap-32 min-h-screen overflow-hidden max-w-screen">
+    <div className="p-4 md:p-20 grid grid-cols-1 gap-8 md:gap-32 min-h-screen overflow-hidden max-w-screen">
       {/* Title */}
-      <h1 className="text-3xl w-auto text-center font-bold">
+      <h1 className="text-2xl md:text-3xl w-auto text-center font-bold">
         Basic usage of{" "}
         <span className="text-blue-500 underline">Framer Motion</span>
       </h1>
 
       {/* Content */}
-      <div className="grid grid-cols-2 gap-20 min-h-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 min-h-auto">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-2xl font-bold">Effects</h1>
         </div>
